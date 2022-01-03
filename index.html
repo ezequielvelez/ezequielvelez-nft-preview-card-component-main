@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <!--encoding characters-->
     <meta charset="UTF-8">
@@ -36,11 +37,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <!--css-->
-
-    
+    <link rel=stylesheet href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles-dist.css">    
   </head>
-  <body>
+
+  <body class=grid--one-column>
+
+    <article class="card">
+      <header class="card__header card__header--img-container"></header>
+      <img src="assets/images/icon-view.svg" alt="eye icon" class="card__header__icon--hover">
+      <div class="card__body">
+        <h3 class="card__body__title">Equilibrium #3429</h3>
+        <p class="card__body__paragraph">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="card__body__stats">
+          <img src="assets/images/icon-ethereum.svg" alt="ethereum icon" class="card__body__stats__icon">
+          0.041 ETH
+        </div>
+        <div class="card__body__stats"> 
+          <img src="assets/images/icon-clock.svg" alt="clock icon" class="card__body__stats__icon">
+          3 days left
+        </div>
+      </div>
+      <footer class=card__footer>
+        <img src="assets/images/image-avatar.png" alt="avatar image" class="card__footer__avatar">
+        <p class="card__footer__paragraph">
+          Creation of <span class="card__footer__paragraph--bold">Jules Wyvern</span>
+        </p>
+      </footer>
+    </article>
+
+    <footer class="footer">
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="footer__link">Frontend Mentor</a>. Coded by <a href="https://github.com/ezequielvelez" target="_blank" class="footer__link">Ezequiel Vélez</a>.
+      </p>
+    </footer>
   </body>
+
 </html>
 
 
@@ -56,36 +90,8 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
 
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
   
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-
-
-    <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-
-    Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
 
   font-family: 'Outfit', sans-serif;
 
