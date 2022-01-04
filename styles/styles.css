@@ -18,7 +18,9 @@
 /*fonts css*/
 html {
     font-family: "Outfit", sans-serif;
-    font-size: 18px /*paragrah*/ /*300 400 600*/
+    font-size: 18px; /*paragrah*/ /*300 400 600*/
+    font-weight: 300;
+    line-height: 1.5;
 }
 
 /*layout structure*/
@@ -42,7 +44,7 @@ body {
 
 .card {
     width: 100%;
-    height: 600px;
+    height: 570px;
     padding: 1.5em;
     border-radius: 20px;
 }
@@ -68,7 +70,7 @@ body {
 .card--grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 16.666666667%);
+    grid-template-rows: repeat(5, 18%) 1fr;
 }
 
 .card__header {
@@ -99,10 +101,32 @@ body {
     margin: 0;
 }
 
+
+.card__header--img-container {
+    background-image: url("../assets/images/image-equilibrium.jpg");
+    background-size: cover;
+    background-position: 50% 100%;
+    border-radius: 10px;
+}
+
+.card__body__title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card__body__paragraph {
+    margin-bottom: 1rem;
+}
+
+.card__footer__avatar,
+.card__footer__paragraph {
+    margin-top: 1rem;
+}
+
 .card__body--flex{
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 
@@ -110,7 +134,7 @@ body {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     gap: 1em;
 }
 
@@ -122,15 +146,30 @@ body {
     width: 100%;
 }
 
+.card__body__stats-item--flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5em;
+}
+
 .card__footer__avatar {
-    width: 2.1em;
+    width: 1.9em;
     height: auto;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+
+.card__footer__paragraph--center {
+    align-self: center;
 }
 
 
 
 
-/*colors*/
+/*colors and fonts*/
 .body--bg-color {
     background-color: var(--very-dark-blue-main-bg);
 }
@@ -139,6 +178,59 @@ body {
     background-color: var(--very-dark-blue-card-bg);
 }
 
+.card__body__paragraph--fz, 
+.card__body__stats-item--fz {
+    font-size: .95rem;
+}
+
+
+.card__body__paragraph--color, 
+.card__body__stats-item--color, 
+.card__footer__paragraph--color {
+    color: var(--soft-blue);
+}
+
+.card__body__stats__icon--cyan,
+.card__body__stats__paragraph--cyan {
+    color: var(--cyan);
+}
+
+.card__footer__paragraph--small {
+    font-size: 16px;
+}
+
+.card__body__stats__paragraph--bold {
+    font-weight: 600;
+}
+
+.card__footer__paragraph--bold {
+    font-weight:400;
+}
+
+.card__footer__paragraph--white {
+    color: var(--white);
+}
+ 
+/*hover*/
+@media (hover: hover) {
+    .card__body__title--hover:hover,
+    .card__footer__paragraph--hover:hover {
+        color: var(--cyan);
+    }
+
+    .card__header--hover{
+        position: relative;
+    }
+
+    .card__header--hover::after,
+    .card__header--hover::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: red;
+    }
 
 
 /*
