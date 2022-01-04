@@ -44,9 +44,10 @@
   <body class="body--grid-one-column body--grid-center body--bg-color">
 
     <article class="card card--grid card--bg-color">
-
-      <header class="card__header card__header--img-container card__header--hover"></header>
-      <!--<img src="assets/images/icon-view.svg" alt="eye icon" class="card__header__icon--hover">-->
+      <header class="card__header">
+        <div class="card__header--background-img"></div>
+        <div class="card__header--hover"></div>
+      </header>
 
       <div class="card__body card__body--flex">
         <h3 class="card__body__title card__body__title--fz card__body__title--hover">Equilibrium #3429</h3>
@@ -74,9 +75,14 @@
 
     </article>
 
-    <footer class="footer">
+    <footer class="footer footer--flex">
       <p class="footer__item attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="footer__item__link">Frontend Mentor</a>. Coded by <a href="https://github.com/ezequielvelez" target="_blank" class="footer__item__link">Ezequiel Vélez</a>.
+        <span class="footer__item__block-1">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="footer__item__link">Frontend Mentor</a>.
+        </span> 
+        <span class="footer__item__block-2">
+          Coded by <a href="https://github.com/ezequielvelez" target="_blank" class="footer__item__link">Ezequiel Vélez</a>.
+        </span>
       </p>
     </footer>
   </body>
